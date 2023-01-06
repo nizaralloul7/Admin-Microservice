@@ -23,10 +23,11 @@ public class AdminController
     private RestTemplate restTemplate;
 
     @Autowired
-    public AdminController(AdminService adminService)
+    public AdminController(AdminService adminService, RestTemplate restTemplate)
     {
         this.adminService = adminService;
-        this.restTemplate = new RestTemplate();
+        this.restTemplate = restTemplate;
+        //this.restTemplate = new RestTemplate();
     }
 
     @GetMapping(value = "/admins")
