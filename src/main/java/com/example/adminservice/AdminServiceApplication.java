@@ -27,7 +27,7 @@ public class AdminServiceApplication
 	{
 		return new RestTemplate();
 	}
-
+/*
 	@Bean
 	public CorsFilter corsFilter()
 	{
@@ -44,5 +44,7 @@ public class AdminServiceApplication
 		urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
 		return new CorsFilter(urlBasedCorsConfigurationSource);
 	}
+
+ */
 }
 

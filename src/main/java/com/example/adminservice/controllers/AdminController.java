@@ -17,6 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/api/admin")
+@CrossOrigin(origins = "*")
 public class AdminController
 {
     private final AdminService  adminService;
